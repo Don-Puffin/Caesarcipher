@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-blue-200 h-screen flex items-center  justify-center">
+
+    <div class=" min-w-full min-h-full p-20 rounded-md flex flex-col items-center">
+<div class = "flex grid-cols-2 gap-4">
+        <img src="klipartz.com.png" class="h-16" alt="caesar head">
+        <h2 class="md:text-4xl sm:text-2xl font-bold mb-4">Caesar Cipher</h2>
+</div>
+
+<br/><p class="font-bold text-xl">Send secret messages to your friends!</p><br/>
+
+       
+
+        <label for="inputText" class="block text-2xl font-medium text-gray-600 mb-1">Input Text:</label>
+        <textarea id="inputText"
+            class=" shadow-md border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 block md:w-1/2 sm:w-auto p-2 rounded-md mb-4" placeholder="Test"
+            rows="7"></textarea>
+
+            <label for="shift" class="block text-2xl font-medium text-gray-600 mb-1">Shift:</label>
+            <input type="number" id="shift"
+                class="border-blue-300 shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-1/8 p-2 rounded-md mb-4" placeholder="Choose Key"/>
+
+        <div class="flex space-x-4">
+            <button onclick="encrypt()"
+                class="bg-blue-500 text-white px-4 text-xl py-2 rounded-md hover:bg-blue-600 shadow-md">Encrypt</button>
+            <button onclick="decrypt()"
+                class="bg-green-500 text-white px-4 text-xl py-2 rounded-md hover:bg-green-600 shadow-md ">Decrypt</button>
+        </div>
+
+        <label for="outputText" class="block text-2xl font-medium text-gray-600 mt-4 mb-1" >Output Text:</label>
+        <textarea id="outputText"
+            class="shadow-md border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 block sm:w-auto md:w-1/2 p-2 rounded-md" placeholder="Yjxy"
+            rows="7" readonly></textarea>
+
+    </div>
+
+    <script src="caesar-cipher.js"></script>
+
+</body>
+
+</html>
