@@ -25,9 +25,13 @@
             class=" shadow-md border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 block md:w-1/2 sm:w-auto p-2 rounded-md mb-4" placeholder="Test"
             rows="7"></textarea>
 
-            <label for="shift" class="block text-2xl font-medium text-gray-600 mb-1">Shift:</label>
-            <input type="number" id="shift"
-                class="border-blue-300 shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-1/8 p-2 rounded-md mb-4" placeholder="Choose Key"/>
+            <label for="primaryShift" class="block text-2xl font-medium text-gray-600 mb-1">Primary Shift:</label>
+            <input type="number" id="primaryShift"
+                class="border-blue-300 shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-1/8 p-2 rounded-md mb-4 " value="1"/>
+
+                <label for="secondaryShift" class="block text-2xl font-medium text-gray-600 mb-1">Secondary Shift:</label>
+            <input type="number" id="secondaryShift"
+                class="border-blue-300 shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-1/8 p-2 rounded-md mb-4" value="0"/>
 
         <div class="flex space-x-4">
             <button onclick="encrypt()"
