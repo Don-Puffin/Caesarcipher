@@ -29,4 +29,4 @@ function doubleShiftCipher(text, primaryShift, secondaryShift) {
 
 
 
-module.exports = { caesarCipher };
+module.exports = { doubleShiftCipher };
